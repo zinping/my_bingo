@@ -1,0 +1,10 @@
+import bingo-logger from '../../..'
+
+const transport = bingo-logger.transport({
+  target: 'bingo-logger/file'
+})
+const logger = bingo-logger(transport)
+
+logger.info('Hello')
+
+process.exit(0)
